@@ -12,9 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
+
   <body>
     <header class="header border">
       <section class="section no-padding">
@@ -36,6 +38,7 @@
               <li class="item"><a href="" class="link">Contacts</a></li>
             </ul>
           </nav>
+
           <ul class="mail-tel list">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="mail"
@@ -47,10 +50,88 @@
               <a href="tel:+110001111111" class="tel">+11 (000) 111-11-11</a>
             </li>
           </ul>
+          <button type="button" class="menu-open" data-menu-open>
+            <svg class="menu-open-icon" width="32px" height="22px">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-close data-menu-close">
+                <svg class="menu-close-icon" width="8px" height="8px">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="link-mob current">Studio</a>
+                </li>
+
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="link-mob">Portfolio</a>
+                </li>
+
+                <li class="mob-menu-item">
+                  <a href="" class="link-mob">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mob-menu-bottom">
+              <ul class="mob-menu-mail-tel list">
+                <li class="mob-menu-mail-tel-item">
+                  <a href="tel:+110001111111" class="tel tel-mob"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+
+                <li class="mob-menu-mail-tel-item">
+                  <a href="mailto:info@devstudio.com" class="mail mail-mob"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </header>
-
     <main>
       <!--Hero-->
 
@@ -126,8 +207,10 @@
           </ul>
         </div>
       </section>
+
       <!--What are we doing-->
-      <section class="section work">
+
+      <!--  <section class="section work">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
 
@@ -149,7 +232,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  -->
 
       <!--Our Team-->
 
@@ -162,6 +245,10 @@
               <img
                 src="./images/MarkGuerrero.jpg"
                 alt="photo of a respectable man with a beard"
+                srcset="
+                  ./images/MarkGuerrero.jpg    1x,
+                  ./images/MarkGuerrero@2x.jpg 2x
+                "
                 width="264"
               />
               <div class="card-content">
@@ -204,6 +291,7 @@
               <img
                 src="./images/TomFord.jpg"
                 alt="photo of a cheerful guy in a blue shirt"
+                srcset="./images/TomFord.jpg 1x, ./images/TomFord@2x.jpg 2x"
                 width="264"
               />
               <div class="card-content">
@@ -246,6 +334,8 @@
               <img
                 src="./images/CamilaGarcia.jpg"
                 alt="photo of a beautiful young girl in a pink sweater "
+                srcset="./images/CamilaGarcia.jpg 1x
+                ./images/CamilaGarcia@2x.jpg 2x"
                 width="264"
               />
               <div class="card-content">
@@ -288,6 +378,10 @@
               <img
                 src="./images/DanielWilson.jpg"
                 alt="photo of a smiling guy in a gray jacket"
+                srcset="
+                  ./images/DanielWilson.jpg    1x,
+                  ./images/DanielWilson@2x.jpg 2x
+                "
                 width="264"
               />
               <div class="card-content">
@@ -330,6 +424,7 @@
       </section>
 
       <!--Customers-->
+
       <section class="section customers">
         <div class="container">
           <h2 class="section-title">Customers</h2>
@@ -381,7 +476,10 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!--  FOOTER   -->
+
+    <!--
+     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-main">
           <a href="./index.html" class="logo"
@@ -445,20 +543,21 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer>  -->
 
     <!--modal -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
-        </button>
+        </button> -->
 
-        <!-- form -->
-        <form class="modal-form">
+    <!-- form -->
+
+    <!-- <form class="modal-form">
           <p class="modal-text">
             Leave your contacts and we will call you back
           </p>
@@ -533,7 +632,14 @@
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
