@@ -41,6 +41,8 @@ img {
   height: auto;
 
 }
+
+
 .invisible {
   display: none;
 }
@@ -377,7 +379,7 @@ button:focus {
 
 
 .section.team {
-  display: flex;
+  /*display: flex;*/
   background-color: var(--secondary-background-color);
   padding-top: 96px;
   padding-bottom: 128px;
@@ -395,7 +397,9 @@ button:focus {
 
 
 
-.item-team { width: 264px;
+.item-team { 
+  display: block;
+  width: 264px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -404,8 +408,7 @@ button:focus {
 
 
 .card-content {
-  height: 168px;
-  width: 100%;
+
   padding: 32px 16px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -654,7 +657,7 @@ margin-bottom: 72px;}
 
 .sub-input { 
   padding: 8px 16px;
-  width: 428px;
+  width: 100%;
 height: 40px;
 
   background: #2E2F42;
@@ -899,7 +902,8 @@ display: inline-flex;}
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
 }
 
 .modal {
@@ -907,9 +911,9 @@ display: inline-flex;}
   padding-top: 72px;
   
   position: absolute;
-  top: 50%;
+  top: 24px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
 
   width: 408px;
   min-height: 576px;
@@ -1478,7 +1482,7 @@ margin-left: auto;
 
 
  
- /* @media screen and (max-width: 1199px) {
+ /*@media screen and (max-width: 1199px) {
   .section.work {
     display: none;
   }
