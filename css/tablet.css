@@ -235,12 +235,9 @@ text-align: start;}
   row-gap: 64px;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 
 .item-team {
-  height: 428px;
   width: calc((100% - 24px) / 2);
   margin-bottom: 0;
 }
@@ -378,7 +375,7 @@ align-items: flex-start;}
   display: flex;
   flex-direction: column;
   margin-left: 80px;
-  /*align-items: flex-start;*/
+  align-items: start;
 }
 .form-footer {align-items: flex-start;}
 

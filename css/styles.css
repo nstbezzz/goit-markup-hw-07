@@ -399,23 +399,22 @@ button:focus {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 50px;
   margin-left: auto;
   margin-right: auto;
-
+  row-gap: 72px;
 }
 
 
 
 .item-team { 
-  display: block;
+  height: 100%;
   width: 264px;
   margin-left: auto;
   margin-right: auto;
+/*margin-bottom: 72px;*/
 }
 
-.item-team:not(:last-child) {margin-bottom: 72px;}
+/*.item-team:not(:last-child) {margin-bottom: 72px;}*/
 
 
 .card-content {
@@ -501,14 +500,16 @@ button:focus {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 72px;
   margin: 0 auto;
 }
 
 .customers-item {
+  height: 100%;
   width: calc((100% - 16px) / 2);
   height: 88px;
-  margin-bottom: 72px;
+  /*margin-bottom: 72px;*/
   
 }
 
@@ -1488,9 +1489,9 @@ body {
 
 @media screen and (min-width: 480px) 
 {.container {
-  width: 428px;
+width: 428px;
 margin-left: auto;
-    margin-right: auto;} }
+margin-right: auto;} }
 
 
 
