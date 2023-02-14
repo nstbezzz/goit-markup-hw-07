@@ -100,7 +100,7 @@
   }
 
   .foundation-text {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 72px) / 4);
 
     margin-bottom: 0;
   }
@@ -179,11 +179,20 @@
     padding-bottom: 120px;
   }
 
+  .customers-container {width: 1158px;}
+
+
   .customers-item {
-    width: calc((100% - 80px) / 6);
-  }
+    width: calc((100% - 120px) / 6);
+    margin-bottom: 0;}
+  
+
+  .customers-link {max-width: 168px;}
+
 
   /*FOOTER*/
+  .footer-main {
+margin-bottom: 0;}
 
   .footer {
     padding-top: 96px;
@@ -228,6 +237,7 @@
   .footer-soc-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
   }
 
   .footer-soc-item {
