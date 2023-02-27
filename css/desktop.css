@@ -360,6 +360,14 @@ margin-bottom: 0;}
   .send-icon {
     margin-left: 16px;
   }
+
+  /* MODAL */
+
+
+.modal { 
+  padding: 24px;
+  padding-top: 72px;
+}
 }
 
 /* MEDIA */
