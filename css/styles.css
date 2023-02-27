@@ -704,7 +704,11 @@ button:focus {
 
 .section.portfolio {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
+
+.container.portfolio-btn
+{width: 1158px;}
 
 .portfolio-title {
   margin-top: 0;
@@ -775,6 +779,7 @@ button:focus {
 /* card-set */
 
 .card-set {
+  
   padding: 0;
   margin: 0;
   list-style: none;
@@ -783,17 +788,22 @@ button:focus {
   flex-wrap: wrap;
 
   margin-left: calc(-1 * var(--card-set-gap));
+
+}
+
+
+.item-cards {
+  width: 360px;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 48px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-set > .item-cards {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
-}
-.item-cards {
-  margin-top: 0;
-  margin-bottom: 48px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-cards:hover {
@@ -813,6 +823,13 @@ button:focus {
   border-top: 0;
 }
 
+.img-container {
+  width: 360px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
 .item-cards:hover .overlay,
 .item-cards:focus .overlay {
   border: 0.5px solid #f4f4fd;
@@ -824,10 +841,6 @@ button:focus {
   transform: translate(0, 0);
 }
 
-.img-container {
-  position: relative;
-  overflow: hidden;
-}
 
 .overlay {
   position: absolute;

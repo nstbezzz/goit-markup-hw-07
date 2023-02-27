@@ -26,16 +26,17 @@
 
             <ul class="site-nav list">
               <li class="item">
-                <a href="./index.html" class="link">Studio</a>
+                <a href="./index.html" class="link current">Studio</a>
               </li>
 
               <li class="item">
-                <a href="./portfolio.html" class="link current">Portfolio</a>
+                <a href="./portfolio.html" class="link">Portfolio</a>
               </li>
 
               <li class="item"><a href="" class="link">Contacts</a></li>
             </ul>
           </nav>
+
           <ul class="mail-tel list">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="mail"
@@ -47,6 +48,85 @@
               <a href="tel:+110001111111" class="tel">+11 (000) 111-11-11</a>
             </li>
           </ul>
+          <button type="button" class="menu-open" data-menu-open>
+            <svg class="menu-open-icon" width="32px" height="22px">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-close" data-menu-close>
+                <svg class="menu-close-icon" width="8px" height="8px">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="link-mob current">Studio</a>
+                </li>
+
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="link-mob">Portfolio</a>
+                </li>
+
+                <li class="mob-menu-item">
+                  <a href="" class="link-mob">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mob-menu-bottom">
+              <ul class="mob-menu-mail-tel list">
+                <li class="mob-menu-mail-tel-item">
+                  <a href="tel:+110001111111" class="tel tel-mob"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+
+                <li class="mob-menu-mail-tel-item">
+                  <a href="mailto:info@devstudio.com" class="mail mail-mob"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </header>
